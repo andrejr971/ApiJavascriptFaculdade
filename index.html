@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Api</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <form id="Form">
+          <input type="text" name="id" id="id" />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nome"
+            autocomplete="none"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            autocomplete="off"
+          />
+          <select name="type" id="type">
+            <option value="" disabled selected>Selecione ...</option>
+            <option value="FISICA">FISICA</option>
+            <option value="JURIDICA">JURIDICA</option>
+          </select>
+          <div class="group-button">
+            <button type="submit">Salvar <i class="far fa-save"></i></button>
+            <button type="button" id="btnClean">
+              Limpar <i class="fas fa-ban"></i>
+            </button>
+          </div>
+        </form>
+        <div id="loadForm">
+          <div class="load">
+            <div class="lds-roller">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div id="load" class="load">
+          <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div id="results"></div>
+      </aside>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
